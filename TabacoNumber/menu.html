@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>XXXXXXX店（カフェ・ホットスナック・コピー機・ATM）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+
+    <script>
+      (function (w, doc,co) {
+        // http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript
+        var u = {},
+          e,
+          a = /\+/g,  // Regex for replacing addition symbol with a space
+          r = /([^&=]+)=?([^&]*)/g,
+          d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+          q = w.location.search.substring(1),
+          v = '2.0.3';
+
+        while (e = r.exec(q)) {
+          u[d(e[1])] = d(e[2]);
+        }
+        
+        if (!!u.jquery) {
+          v = u.jquery;
+        }	
+
+        doc.write('<script src="./js/jquery-2.0.3.min.js">' + "<" + '/' + 'script>');
+        co.log('\nLoading jQuery v' + v + '\n');
+      })(window, document, console);
+    </script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script-->
+    <script src="./js/jquery.quicksearch.js"></script>
+	<script>
+		$(function () {
+			/*
+			Example 1
+			*/
+			$('input#id_search').quicksearch('table#table_example tbody tr');
+			
+		});
+	</script>
+</head>
+<body id="tools">
+
+
+
+<!-- 大きな端末で表示される左側メニュー -->
+<nav id="header-menu">
+<ul>
+<li><a href="index.html">トップに戻る</a></li>
+</ul>
+</nav>
+
+
+
+<main>
+
+
+<!-- ここからmenu -->
+<section id="menu" class="section">
+<div class="contents">
+
+<h2>タバコ メニュー</h2>
+
+<form action="#">
+	<fieldset>
+		<input type="text" name="search" value="" id="id_search" placeholder="銘柄を入力してください" autofocus />
+	</fieldset>
+</form>
+
+<table id="table_example">
+	<thead>
+		<tr>
+			<th width="80%">銘柄</th>
+			<td width="30%">番号・値段</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><th>セブンスター14mg1.2mg</th><td>1番・600円</td></tr>
+		<tr><th>メビウス・ワン・100’s・ボックス1mg0.1mg</th><td>2番・580円</td></tr>
+		<tr><th>セブンスター・ボックス14mg1.2mg</th><td>3番・600円</td></tr>
+		<tr><th>メビウス・スーパーライト6mg0.5mg</th><td>4番・580円</td></tr>
+		<tr><th>メビウス・エクストラライト3mg0.3mg</th><td>5番・580円</td></tr>
+		<tr><th>メビウス・ライト8mg0.7mg</th><td>6番・580円</td></tr>
+		<tr><th>メビウス10mg0.8mg</th><td>7番・580円</td></tr>
+		<tr><th>メビウス・エクストラライト・100’s・ボックス3mg0.3mg</th><td>8番・580円</td></tr>
+		<tr><th>ケント・1・100・ボックス1mg0.1mg</th><td>9番・520円</td></tr>
+		<tr><th>ウインストン・キャスター・ホワイト・ワン・100’s・ボックス1mg0.1mg</th><td>10番・540円</td></tr>
+		<tr><th>メビウス・スーパーライト・100’s・ボックス6mg0.5mg</th><td>11番・580円</td></tr>
+		<tr><th>マールボロ KS ボックス12mg0.9mg</th><td>12番・600円</td></tr>
+		<tr><th>ケント・1・100・ボックス1mg0.1mg</th><td>13番・500円</td></tr>
+		<tr><th>メビウス・プレミアムメンソール・オプション・パープル・55mg0.5mg</th><td>14番・580円</td></tr>
+		<tr><th>メビウス・エクストラライト・ボックス3mg0.3mg</th><td>15番・580円</td></tr>
+		<tr><th>ラッキーストライク・エキスパートカット・66mg0.5mg</th><td>16番・450円</td></tr>
+		<tr><th>ウインストン・キャスター・ホワイト・55mg0.4mg</th><td>17番・540円</td></tr>
+		<tr><th>メビウス・ワン1mg0.1mg</th><td>18番・580円</td></tr>
+		<tr><th>マールボロ メンソール 8 ボックス8mg0.6mg</th><td>19番・600円</td></tr>
+		<tr><th>ホープ (10)14mg1.1mg</th><td>20番・300円</td></tr>
+	</tbody>
+</table>
+
+
+
+<dl class="table reverse">
+
+					
+</dl>
+
+</div>
+</section>
+
+
+
+<!-- ここからお知らせとshop情報 -->
+<section id="shop" class="section">
+<div class="contents">
+
+<div class="shop-data">
+
+<h2><span class="hosoku">Shop Data</span><span class="fade-in-text">店舗情報</span></h2>
+
+<dl class="table">
+
+	<tr><th>店舗名</dt>
+	<dd>XXXXXXXX店</td></tr>
+		<tr><th>所在地</dt>
+	<dd>〒317-73 XXXXXXXXX店</dd>
+		<tr><th>営業時間</dt>
+	<dd>24時間営業</td></tr>
+		<tr><th>TEL</dt>
+	<dd>XXXX-XX-XXXX</td></tr>
+
+</dl>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25605.775523351054!2d140.68209714953397!3d36.65713943039441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60217891012081d3%3A0x8e141d75c2c92694!2z44OV44Kh44Of44Oq44O844Oe44O844OIIOaXpeeri-W3neWwu-Wbm-S4geebruW6lw!5e0!3m2!1sja!2sjp!4v1744276032479!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<h3><img src="images/forrow_us.png" alt="Follow Us"></h3>
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/.shop-data-->
+
+</div>
+</section>
+
+
+
+<!-- ここからコピーライト -->
+<footer class="section">
+<div class="contents">
+
+<!--	<small>Copyright&copy; ファミリーマート日立川尻町四丁目店 All Rights Reserved.</small>-->
+<small>Copyright&copy; ファミリーマートXXXXXXXXXX店 All Rights Reserved.</small>
+
+</div>
+</footer>
+
+
+
+<!--テンプレートの著作。削除しないで下さい。-->
+<div class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></div>
+
+
+
+</main>
+
+
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+
+
+<!--開閉ブロック-->
+<div id="menubar">
+<nav>
+<ul>
+	<li><a href="index.html">トップ</a></li>
+	<li><a href="#menu">タバコメニュー</a></li>
+	<li><a href="#special">お得な商品</a></li>
+	<li><a href="#shop">ショップ情報</a></li>
+	<li><a href="#kodawari">私たちのこだわり</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+
+
+<!--jQueryの読み込み-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
